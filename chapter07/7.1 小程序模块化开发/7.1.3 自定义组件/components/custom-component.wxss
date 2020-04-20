@@ -1,0 +1,5 @@
+.list {
+  text-align: center;
+  background-color: #ccc;
+  border-top: 1rpx solid #fff;
+}

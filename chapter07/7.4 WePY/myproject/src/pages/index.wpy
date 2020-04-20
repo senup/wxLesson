@@ -1,0 +1,88 @@
+<style lang='less'>
+  .wrapShop {
+    border: 1rpx solid #ccc;
+    margin-top: -1rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 278rpx;
+  }
+  .info {
+    margin-left: 30rpx;
+  }
+  .image {
+    width: 316rpx;
+    height: 230rpx;
+    border: 1rpx solid #ccc;
+    margin-left: 10rpx;
+  }
+  .title {
+    font-size: 10pt;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 1px;
+  }
+  .footer {
+    margin-top: 34rpx;
+    font-size: 15pt;
+    color: red;
+  }
+  .price {
+    text-decoration: line-through;
+    font-size: 10pt;
+    color: #ccc;
+  }
+  .money {
+    font-size:10pt;
+  }
+</style>
+<template>
+<panel>
+  <view class="wrapShop" wx:for="{{list}}" wx:key="id">
+    <image class="image" src="{{item.image}}" />
+    <view class="info">
+       <view class="title">生活家居无痕胶蓝丁胶替钉胶相框照片墙专用</view>
+       <view class="footer">
+         <text class="money">￥</text>36.90
+         <view class="price">￥12.00</view>
+       </view>
+     </view> 
+   </view>
+</panel>
+</template>
+<script>
+  import wepy from 'wepy'
+  import Panel from '@/components/panel' // alias example
+  export default class Index extends wepy.page {
+    config = {
+      navigationBarTitleText: '商品展示'
+    }
+    components = {
+      panel: Panel
+    }
+    data = {
+      list: [
+        {
+          title: '替钉胶',
+          image: '/images/img.jpg'
+        },
+        {
+          title: '替钉胶',
+          image: '/images/img.jpg'
+        },
+        {
+          title: '替钉胶',
+          image: '/images/img.jpg'
+        },
+        {
+          title: '替钉胶',
+          image: '/images/img.jpg'
+        },
+        {
+          title: '替钉胶',
+          image: '/images/img.jpg'
+        }
+      ]
+    }
+  }
+</script>

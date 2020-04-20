@@ -1,0 +1,6 @@
+<view>
+  <my-component value="test value">
+    <!-- 在此处编写的内容将会插入到组件slot中 -->
+    <view>示例内容</view>
+  </my-component>
+</view>

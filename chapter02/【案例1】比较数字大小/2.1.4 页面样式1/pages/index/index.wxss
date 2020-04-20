@@ -1,0 +1,13 @@
+/* pages/index/index.wxss */
+
+view {
+  margin: 20px;
+}
+
+.container {
+  margin: 20px;
+}
+
+view::after {
+  content: "测试";
+}

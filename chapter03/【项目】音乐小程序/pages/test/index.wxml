@@ -1,0 +1,4 @@
+<!--pages/test/index.wxml-->
+<include src="header.wxml" />
+<view> body </view>
+<include src="footer.wxml" />

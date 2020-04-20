@@ -1,0 +1,16 @@
+<!--pages/test/swiper.wxml-->
+<swiper>
+  <swiper-item style="background:#ccc">0</swiper-item>
+  <swiper-item style="background:#ddd">1</swiper-item>
+  <swiper-item style="background:#eee">2</swiper-item>
+</swiper>
+<swiper current="1">
+  <swiper-item style="background:#ccc">0</swiper-item>
+  <swiper-item style="background:#ddd">1</swiper-item>
+  <swiper-item style="background:#eee">2</swiper-item>
+</swiper>
+<swiper current-item-id="c">
+  <swiper-item item-id="a" style="background:#ccc">0</swiper-item>
+  <swiper-item item-id="b" style="background:#ddd">1</swiper-item>
+  <swiper-item item-id="c" style="background:#eee">2</swiper-item>
+</swiper>

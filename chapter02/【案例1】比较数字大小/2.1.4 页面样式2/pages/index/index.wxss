@@ -1,0 +1,18 @@
+/* pages/index/index.wxss */
+
+view {
+  margin: 50rpx;
+}
+
+input {
+  /* width: 600rpx; */
+  width: 300px;  /* 此处将原来的600rpx改为300px */
+  margin-top: 20rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+
+button {
+  margin: 50rpx;
+}
+
+@import "test.wxss";

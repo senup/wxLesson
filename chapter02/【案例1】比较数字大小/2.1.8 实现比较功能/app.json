@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index5/index",
+    "pages/index4/index",
+    "pages/index3/index",
+    "pages/index2/index2",
+    "pages/index2/index1",
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "数值比较",
+    "navigationBarBackgroundColor": "#369"
+  }
+}

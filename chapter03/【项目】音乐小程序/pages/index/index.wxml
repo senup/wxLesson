@@ -1,0 +1,97 @@
+<!-- 标签页标题 -->
+<view class="tab">
+  <view class="tab-item {{tab==0?'active':''}}" bindtap="changeItem" data-item="0">音乐推荐</view>
+  <view class="tab-item {{tab==1?'active':''}}" bindtap="changeItem" data-item="1">播放器</view>
+  <view class="tab-item {{tab==2?'active':''}}" bindtap="changeItem" data-item="2">播放列表</view>
+</view>
+<!-- 内容区域 -->
+<view class="content">
+  <swiper current="{{item}}" bindchange="changeTab">
+    <swiper-item>
+      <!-- 内容滚动区域 -->
+      <scroll-view class="content-info" scroll-y>
+        <!-- 轮播图 -->
+        <swiper class="content-info-slide" indicator-color="rgba(255,255,255,.5)" indicator-active-color="#fff" indicator-dots circular autoplay>
+          <swiper-item>
+            <image src="/images/banner.jpg" />
+          </swiper-item>
+          <swiper-item>
+            <image src="/images/banner.jpg" />
+          </swiper-item>
+          <swiper-item>
+            <image src="/images/banner.jpg" />
+          </swiper-item>
+        </swiper>
+        <!-- 功能按钮 -->
+        <view class="content-info-portal">
+          <view>
+            <image src="/images/04.png" />
+            <text>私人FM</text>
+          </view>
+          <view>
+            <image src="/images/05.png" />
+            <text>每日歌曲推荐</text>
+          </view>
+          <view>
+            <image src="/images/06.png" />
+            <text>云音乐新歌榜</text>
+          </view>
+        </view>
+        <!-- 热门音乐 -->
+        <view class="content-info-list">
+          <view class="list-title">推荐歌曲</view>
+          <view class="list-inner">
+            <view class="list-item">
+              <image src="/images/cover.jpg" />
+              <view>紫罗兰</view>
+            </view>
+            <view class="list-item">
+              <image src="/images/cover.jpg" />
+              <view>五月之歌</view>
+            </view>
+            <view class="list-item">
+              <image src="/images/cover.jpg" />
+              <view>菩提树</view>
+            </view>
+            <view class="list-item">
+              <image src="/images/cover.jpg" />
+              <view>欢乐颂</view>
+            </view>
+            <view class="list-item">
+              <image src="/images/cover.jpg" />
+              <view>安魂曲</view>
+            </view>
+            <view class="list-item">
+              <image src="/images/cover.jpg" />
+              <view>摇篮曲</view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <!-- 播放器页面 -->
+      <include src="play.wxml" />
+    </swiper-item>
+    <swiper-item>
+      <include src="playlist.wxml" />
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 底部播放器 -->
+<view class="player">
+  <image class="player-cover" src="{{play.coverImgUrl}}" />
+  <view class="player-info">
+    <view class="player-info-title">{{play.title}}</view>
+    <view class="player-info-singer">{{play.singer}}</view>
+  </view>
+  <view class="player-controls">
+    <!-- 切换到播放列表 -->
+    <image src="/images/01.png" bindtap="changePage" data-page="2" />
+    <!-- 播放或暂停 -->
+    <image wx:if="{{state=='paused'}}" src="/images/02.png" bindtap="play" />
+    <image wx:else src="/images/02stop.png" bindtap="pause" />
+    <!-- 下一曲 -->
+    <image src="/images/03.png" bindtap="next" />
+  </view>
+</view>

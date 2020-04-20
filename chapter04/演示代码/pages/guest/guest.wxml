@@ -1,0 +1,4 @@
+<!--pages/guest/guest.wxml-->
+<picker range="{{array}}" value="{{index}}" bindchange="pickerChange">
+  <view>当前选择：{{array[index]}}（点我修改）</view>
+</picker>

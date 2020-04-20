@@ -1,0 +1,25 @@
+<!--pages/index/index.wxml-->
+<view>
+  <text>请输入第1个数字：</text>
+  <input type="number" />
+</view>
+<view>
+  <text>请输入第2个数字：</text>
+  <input type="number" />
+</view>
+<button bindtap="compare">比较</button>
+<view bindtap="viewtap" id="outer">
+  outer
+  <view id="inner">inner</view>
+</view>
+<view bindtap="outerTap">
+  outer
+  <view catchtap="middleTap">
+    middle
+    <view bindtap="innerTap">inner</view>
+  </view>
+</view>
+<view>
+  <text>比较结果：</text>
+</view>
+<view style="height:400px;background:#eee">填充高度</view>

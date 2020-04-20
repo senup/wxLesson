@@ -1,0 +1,12 @@
+<!--pages/index3/index.wxml-->
+<view>
+  <text>请输入第1个数字：</text>
+  <input type="number" bindchange="change3" data-id="num1" />
+</view>
+<view>
+  <text>请输入第2个数字：</text>
+  <input type="number" bindchange="change3" data-id="num2" />
+</view>
+<view>
+  <text>比较结果：{{num1 > num2 ? '第1个数大' : (num1 < num2 ? '第2个数大' : '两数相等')}}</text>
+</view>

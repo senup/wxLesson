@@ -1,0 +1,13 @@
+<!--pages/index/index.wxml-->
+<view>
+  <text>请输入第1个数字：</text>
+  <input type="number" />
+</view>
+<view>
+  <text>请输入第2个数字：</text>
+  <input type="number" />
+</view>
+<button bindtap="compare">比较</button>
+<view>
+  <text>比较结果：</text>
+</view>

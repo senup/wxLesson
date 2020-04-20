@@ -1,0 +1,22 @@
+<style lang="less">
+    .panel {
+    width: 100%;
+    margin-top: 20rpx;
+    text-align: left;
+    font-size: 12px;
+    padding-top: 0rpx;
+    padding-left: 0rpx;
+    padding-bottom: 20rpx;
+  }
+</style>
+<template>
+  <view class="panel">
+    <slot></slot>
+  </view>
+</template>
+<script>
+  import wepy from 'wepy'
+
+  export default class Panel extends wepy.component {
+  }
+</script>

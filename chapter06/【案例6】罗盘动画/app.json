@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/compass/compass"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "罗盘动画",
+    "navigationBarTextStyle": "black"
+  }
+}

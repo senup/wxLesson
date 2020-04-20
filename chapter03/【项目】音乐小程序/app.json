@@ -1,0 +1,8 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/test/index",
+    "pages/test/swiper",
+    "pages/test/test"
+  ]
+}
